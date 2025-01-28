@@ -78,7 +78,7 @@ class Login extends StatelessWidget {
               SizedBox(height: 25),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, AppRoutes.home);
+                  Navigator.pushReplacementNamed(context, AppRoutes.home);
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.zero,

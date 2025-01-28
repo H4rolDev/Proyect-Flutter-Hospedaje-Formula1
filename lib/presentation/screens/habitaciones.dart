@@ -1,19 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hospedajef1/presentation/widgets/widgetBar.dart';
 
 class Habitaciones extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Habitaciones Screen'),
-      ),
+      appBar: widgetBar(),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context); // Regresa a la pantalla anterior
-          },
-          child: Text('Go Back'),
-        ),
+        child: Column(
+          children: [
+            SizedBox(height: 20,),
+            Text(
+              'Limpieza',
+              style: TextStyle(
+                fontSize: 25.0,
+                fontWeight: FontWeight.bold
+
+              ),
+            )
+          ],
+        )
       ),
     );
   }
