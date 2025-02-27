@@ -61,6 +61,46 @@ class Home extends StatelessWidget {
                 ),
                 
               ),
+            ),
+            ElevatedButton(
+              onPressed:(){ Navigator.pushNamed(context, AppRoutes.habitaciones);
+              },
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.zero,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                )
+              ),
+              child: Ink(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: SizedBox(
+                  width: 550,
+                  height: 250,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children:[
+                      Icon(
+                        Icons.cleaning_services_outlined,
+                          color: Colors.black,
+                          size: 140.0,
+                        ),
+                      Text(
+                        'Chatbot',
+                        style: TextStyle(
+                          fontSize: 27.0,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                
+              ),
             )
           ],
         ),

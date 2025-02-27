@@ -18,7 +18,7 @@ class Login extends StatelessWidget {
             children: [
               SizedBox(
                 width: 650,
-                child: Image.asset('../assets/images/logo.jpeg', fit: BoxFit.cover,),
+                child: Image.asset('assets/images/logo.jpg', fit: BoxFit.cover,),
               ),
               Align(
                 alignment: Alignment.centerLeft,
